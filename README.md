@@ -2,7 +2,6 @@
 
 > Site institucional fictício desenvolvido como projeto acadêmico,
 > representando uma clínica de psicologia focada em saúde mental e qualidade de vida.
-> Representei um profissional da área no projeto porém ocultei os dados sensíveis.
 
 ---
 
@@ -38,20 +37,13 @@ e organização de código front-end.
 | `index.html` | Home — apresentação da clínica         |
 | `sobre.html` | Sobre a equipe e a missão              |
 | `servicos.html` | Serviços e especialidades oferecidos |
-| `novidades.html`  | Artigos e conteúdos de bem-estar       |
+| `novidades.html`  | Informações importantes            |
 | `contato.html` | Formulário e informações de contato  |
 
 ---
 
-## 🎨 Design
-
-- **Paleta:** tons de vinho, rosé e branco
-- **Tipografia:** Playfair Display (títulos) + Lato (corpo)
-- **Estilo:** clean, acolhedor e profissional
-
----
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Nicolas** como projeto da disciplina de
+Desenvolvido por **@nicolaascnt** e **@fpcaldeira** como projeto da disciplina de
 Desenvolvimento Web — Universidade Veiga de Almeida (UVA).

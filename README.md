@@ -7,8 +7,7 @@
 
 ## 📋 Sobre o projeto
 
-O **Vida Leve** é um site de 5 páginas criado do zero com HTML, CSS e JavaScript puro,
-sem o uso de frameworks ou bibliotecas externas.
+O **Vida Leve** é um site de 5 páginas criado do zero com HTML, CSS e JavaScript.
 
 O objetivo foi desenvolver uma identidade visual acolhedora e profissional para uma
 clínica fictícia de psicologia, praticando conceitos de layout, responsividade

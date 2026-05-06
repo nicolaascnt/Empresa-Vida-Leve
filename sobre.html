@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header class="topo">         
+    <h1>Vida Leve</h1> 
+    <nav>
+        <a href="index.html">Início</a>    
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="novidades.html">Novidades</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<main>  
+    <!--parte principal do site contendo a introducao e agendar consulta-->                         
+    <div class = "introdução">        
+    <h1> Saúde com cuidado e dedicação</h1>
+    <p> Atendimento humanizado com uma especialista em acompanhamento psicológico e comportamental no emagrecimento.</p>
+    <a href = "contato.html"><h2>Agendar sua consulta</h2></a>
+    </div>
+<div class="quemSouEu">
+
+    <div class="textoQuemSouEu">
+
+        <h1>Quem sou eu?</h1>
+
+        <!-- PRIMEIRO PARÁGRAFO -->
+        <h2>
+            Eu ofereço um acolhimento, amparo, apoio e clareza mental para lidar com sentimentos confusos e momentos de sofrimento emocional.
+        </h2>
+
+        <!-- BOTÃO -->
+        <button id="btnSaibaMais" class="botao-saiba-mais" onclick="mostrarMais()">
+            SAIBA MAIS
+        </button>
+
+        <!-- CONTEÚDO EXTRA -->
+        <div id="conteudoExtra">
+
+            <h2>
+                Sou especialista em acompanhamento psicológico e comportamental no emagrecimento, com mais de 15 anos de experiência ajudando pessoas em suas transformações de vida, promovendo mais qualidade emocional, segurança e clareza no processo.
+            </h2>
+
+            <h2>
+                Também atuo como especialista em terapia de casal e família, auxiliando no fortalecimento das relações e na construção de vínculos mais saudáveis.
+            </h2>
+
+            <h2>
+                Tenho experiência com jovens em desenvolvimento, ajudando no amadurecimento emocional e na construção de identidade.
+            </h2>
+
+            <h2>
+                Minha abordagem é direta e objetiva: vou ao ponto, trazendo entendimento claro sobre o seu processo.
+            </h2>
+
+            <h2>
+                Sou formada pela Universidade Celso Lisboa, com pós-graduação em Terapia de Família e especialização em emagrecimento.
+            </h2>
+
+            <!-- BOTÃO OCULTAR -->
+            <button id="btnOcultar" class="botao-saiba-mais" onclick="ocultar()">
+                OCULTAR
+            </button>
+
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+</main>
+
+<footer>© 2025 Vida Leve — Psicologia & Bem Estar. Todos os direitos reservados.</footer>
+
+<script>
+function mostrarMais() {
+    const conteudo = document.getElementById("conteudoExtra");
+    const botao = document.getElementById("btnSaibaMais");
+
+    conteudo.classList.add("ativo");
+    botao.style.display = "none";
+
+    setTimeout(() => {
+        conteudo.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }, 150);
+}
+
+function ocultar() {
+    const conteudo = document.getElementById("conteudoExtra");
+    const botao = document.getElementById("btnSaibaMais");
+
+    conteudo.classList.remove("ativo");
+
+    setTimeout(() => {
+        botao.style.display = "inline-flex";
+    }, 250);
+}
+</script>
+
+</body>
+</html>

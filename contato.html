@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <!--topo do site com o nome vida leve e tal-->
+            <header class="topo">         
+                <h1>Vida Leve</h1> 
+                <nav>
+                <a href="index.html">Início</a>    
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="novidades.html">Novidades</a>
+                <a href="contato.html">Contato</a>
+                </nav>
+
+            </header>
+
+        <main>   
+            <!--parte principal do site contendo a introducao e agendar consulta-->                         
+            <div class = "introdução">        
+            <h1> Saúde com cuidado e dedicação</h1>
+            <p> Atendimento humanizado com uma especialista em acompanhamento psicológico e comportamental no emagrecimento.</p>
+            <h2>Agendar sua consulta</h2></a>
+            </div>
+        </main> 
+        <section id="contato" class="contato">
+            
+
+            <div class="contato-container">
+                <h1>Entre em Contato</h1>
+                <form class="contato-form" onsubmit="enviarWhats(event)">
+                    <label>Seu nome<input type="text" id="nome" placeholder="Seu nome" required></label>
+                    <label>Assunto<input type="text" id="assunto" placeholder="Ex: Dúvida, orçamento..." required></label>
+                    <label>Sua mensagem<textarea id="mensagem" rows="4" placeholder="Sua mensagem" required></textarea></label>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+
+            </div>
+        </section>
+
+        <script>
+            function enviarWhats(event) {
+            event.preventDefault();
+
+            let nome = document.getElementById("nome").value;
+            let assunto = document.getElementById("assunto").value;
+            let mensagem = document.getElementById("mensagem").value;
+
+            let telefone = "";
+
+            let texto = `Olá! Tudo bem? %0A%0AMeu nome é ${nome}.%0A%0AEstou entrando em contato através do site.%0A%0AAssunto: ${assunto}%0A%0AMensagem:%0A${mensagem}%0A%0AAguardo retorno. Obrigado!`;
+
+            let url = `https://wa.me/${telefone}?text=${(texto)}`;
+
+            window.open(url, "_blank");
+            }
+        </script>
+
+        <footer>© 2025 Vida Leve — Psicologia & Bem Estar. Todos os direitos reservados.</footer> 
+        
+    </body>
+
+</html>

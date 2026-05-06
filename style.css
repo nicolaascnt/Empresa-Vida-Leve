@@ -1,0 +1,533 @@
+@font-face {
+  font-family: "MorrisBlackLetter Regular";
+    src: url("./fonts/MorrisBlackLetter Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 40px 16px;
+}
+
+.topo h1 {
+    font-family: "MorrisBlackLetter Regular", sans-serif;
+    margin: 0;
+    font-size: 42px;
+    color: #661421;
+}
+
+.topo nav {
+    display: flex;
+    gap: 36px;
+}
+
+.topo nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+.topo nav a:hover {
+    color: #661421;
+    transition: 0.5s;
+}   
+    
+.introdução {
+    text-align: center;
+    min-height: 10vh;
+    padding: 120px 40px 60px;
+    margin: 0;
+    background: #661421;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.introdução h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.introdução p {
+    max-width: 980px;
+    margin: 24px auto 0;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.904);
+    font-weight: bold;
+}
+
+.introdução h2 {
+    font-size: 20px;
+    color:#661421;
+    padding: 0;
+    
+}
+
+.introdução a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 27px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.introdução a:hover {
+    background: #cc6d7d;
+    transition: 0.5s;
+}
+
+.quemSouEu {   
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+.textoQuemSouEu {
+    flex: 1;
+    min-width: 0;
+}
+
+.quemSouEu h1{
+    margin-top: 50px;
+    font-size: 35px;
+    color: #661421;
+}
+
+.quemSouEu h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgba(10, 10, 10, 0.678)
+}
+
+.FotoCarine {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.servicos{
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 40px;
+    text-align: left;
+
+}
+.servicos h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 35px;
+    color: #661421
+
+}
+
+.servicos h2 {
+    text-align: center;
+    font-size: 20px;
+    color: rgba(10, 10, 10, 0.678);
+    margin-bottom: 56px;
+}
+
+.descricao{
+    margin: 0;
+    max-width: 680px;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 20px;
+    color: rgba(10, 10, 10, 0.678)
+}
+
+.lista-servicos {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.servico-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.servico-card > p:first-child {
+    width: 500px;
+    min-height: 180px;
+    border-radius: 28px;
+    background-color: #661421;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.contato {
+    padding: 60px;
+    background-color: #ffffff;
+}
+.contato-container {
+    max-width: 500px;
+    margin: auto;
+}
+.contato-container h1 {
+    text-align: center;
+    color:#661421 ;
+    margin-bottom: 30px;
+}
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contato-form button {
+    padding: 12px;
+    background-color: #7a1c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contato-form button:hover {
+    background-color: #5a1313;
+}
+.contato-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+textarea {
+  resize: none;
+}
+
+footer {
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+}
+.fotoTopo {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    align-self: flex-start;
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.6s ease;
+    opacity: 0;
+    animation: fotoEntrada 1s ease forwards;
+}
+
+.fotoTopo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16);
+}
+
+@keyframes fotoEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.botao-instagram,
+.botao-saiba-mais {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #661421;
+    color: #fff;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    margin-top: 18px;
+    transition: transform 0.25s ease, background 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 10px 22px rgba(102, 20, 33, 0.18);
+}
+
+.botao-instagram:hover,
+.botao-saiba-mais:hover {
+    background: #8a2535;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(102, 20, 33, 0.24);
+}
+
+.botao-instagram:active,
+.botao-saiba-mais:active {
+    transform: translateY(0);
+}
+
+#conteudoExtra {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition:
+        max-height 0.7s ease,
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        margin-top 0.4s ease;
+}
+
+#conteudoExtra.ativo {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 18px;
+}
+
+#conteudoExtra h2 {
+    animation: textoSuave 0.7s ease;
+}
+
+@keyframes textoSuave {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quemSouEu {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px 40px;
+    display: flex;
+    gap: 50px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.textoQuemSouEu {
+    flex: 1;
+    min-width: 0;
+}
+
+.textoQuemSouEu h1 {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 35px;
+    color: #661421;
+    position: relative;
+}
+
+.textoQuemSouEu h1::after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 3px;
+    background: #c9a46a;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.textoQuemSouEu h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgba(10, 10, 10, 0.68);
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.fotoTopo {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    align-self: flex-start;
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.6s ease;
+    opacity: 0;
+    animation: fotoEntrada 1s ease forwards;
+}
+
+.fotoTopo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16);
+}
+
+@keyframes fotoEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.botao-instagram,
+.botao-saiba-mais {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #661421;
+    color: #fff;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    margin-top: 18px;
+    transition: transform 0.25s ease, background 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 10px 22px rgba(102, 20, 33, 0.18);
+}
+
+.botao-instagram:hover,
+.botao-saiba-mais:hover {
+    background: #8a2535;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(102, 20, 33, 0.24);
+}
+
+.botao-instagram:active,
+.botao-saiba-mais:active {
+    transform: translateY(0);
+}
+
+#conteudoExtra {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition:
+        max-height 0.7s ease,
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        margin-top 0.4s ease;
+}
+
+#conteudoExtra.ativo {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 18px;
+}
+
+#conteudoExtra h2 {
+    animation: textoSuave 0.7s ease;
+}
+
+@keyframes textoSuave {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quemSouEu {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px 40px;
+    display: flex;
+    gap: 50px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.textoQuemSouEu {
+    flex: 1;
+    min-width: 0;
+}
+
+.textoQuemSouEu h1 {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 35px;
+    color: #661421;
+    position: relative;
+}
+
+.textoQuemSouEu h1::after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 3px;
+    background: #c9a46a;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.textoQuemSouEu h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgba(10, 10, 10, 0.68);
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .quemSouEu {
+        flex-direction: column-reverse;
+        gap: 28px;
+    }
+
+    .fotoTopo {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .textoQuemSouEu h1 {
+        margin-top: 0;
+    }
+}
+    
